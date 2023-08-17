@@ -35,7 +35,7 @@ body {
 .title-lines li {
     float: left;
     line-height: 62px;
-    margin: 0 50px;
+    margin: 0 40px;
 }
 
 .title-lines li a:hover {
@@ -45,7 +45,7 @@ body {
 .title-lines li a {
     text-decoration: none;
     color: #fff;
-    padding: 0 10px;
+    padding: 0 auto;
     display: block;
 }
 
@@ -79,8 +79,6 @@ header {
 
 .download-dev {
     text-align: center;
-
-
     width: 1000px;
     padding: 10px 27%;
     margin: 10px auto 20px auto;
@@ -107,4 +105,37 @@ header {
 .download-dev a:hover{
     box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.5);
     text-decoration: none;
+}
+
+
+/*Developers*/
+
+.title2{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.developers{
+    box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 300px;
+    margin: 10px auto 20px auto;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0.4rem;
+    display: block;
+    padding: 2rem 1rem 2rem 1rem;
+    transition: box-shadow 0.3s;
+}
+
+.developer{
+    width: 256px;
+    height: 256px;
+    border-radius: 100%;
+    border: 0px solid white;
+    padding-bottom: 1.5rem;
+}
+
+.developers:hover{
+    box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.5);
 }
