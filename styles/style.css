@@ -4,6 +4,12 @@
 
 }
 
+:root{
+    --pink:#ff7bed;
+    --blue:#377ff2;
+    --purple:#cb5bff;
+}
+
 body {
     background-color: rgb(230, 230, 230)
 }
@@ -11,6 +17,15 @@ body {
 .head-line {
     text-align: left;
     float: left;
+}
+
+.head-line{
+    box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+    display: block;
+}
+.head-line:hover{
+    box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -97,7 +112,7 @@ header {
     display: block;
     font-size: 1.1rem;
     padding: 1rem 1.25rem;
-    background-image: url(../images/button.png);
+    background-image: linear-gradient(to bottom right, var(--blue), var(--purple));
     height: 120%;
     margin: 10px;
 }
@@ -138,4 +153,43 @@ header {
 
 .developers:hover{
     box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.5);
+}
+
+/*others*/
+.question-button{
+    box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    width: 200px;
+    margin: 2rem auto 2rem auto;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 0.4rem;
+    display: block;
+    padding: 10px;
+    transition: box-shadow 0.25s; 
+    background-image: linear-gradient(to bottom right, var(--pink), var(--blue));
+}
+
+.question{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 auto;
+    display: block;
+}
+
+.question-button:hover{
+    box-shadow: 0.2rem 0.2rem 10px rgba(0, 0, 0, 0.5);
+}
+
+/*end*/
+.end{
+    text-align: center;
+    background-color: #000000;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.end.text{
+    color: #a3a3a3;
+    font-size: 0.9rem;
 }
